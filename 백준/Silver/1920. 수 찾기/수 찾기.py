@@ -1,9 +1,10 @@
 import sys
 input = sys.stdin.readline
 
-N = int(input())
-A = set(input().split()) # A: 집합
-M = input()
+n = int(input())
+nlst = set(input().split())
+m = int(input())
 mlst = input().split()
+
 for i in mlst:
-    print(1 if i in A else 0)
+    print(1 if i in nlst else 0)
