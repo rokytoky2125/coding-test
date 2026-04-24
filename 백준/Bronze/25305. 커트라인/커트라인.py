@@ -1,4 +1,8 @@
 n, k = map(int, input().split())
-x = list(map(int, input().split()))
-x.sort(reverse = True)
-print(x[k-1])
+lst = list(input().split())
+result = []
+for i in lst:
+    i = int(i)
+    result.append(i)
+result = sorted(result)
+print(result[-(k)])
