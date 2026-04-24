@@ -1,13 +1,11 @@
-N = int(input())
-han = []
+n = int(input())
+count = 0
 
-
-for i in range(1, N+1): #브루트 포스
-    if i < 100:
-        han.append(i)
-    else:
-        if int(str(i)[2]) - int(str(i)[1]) == int(str(i)[1]) - int(str(i)[0]):
-            han.append(i)
-
-
-print(len(han))
+for i in range(1, n + 1):
+    num = str(i)
+    if len(num) <= 2:
+        count += 1
+    elif len(num) == 3:
+        if int(num[0]) - int(num[1]) == int(num[1]) - int(num[2]):
+            count += 1
+print(count)
