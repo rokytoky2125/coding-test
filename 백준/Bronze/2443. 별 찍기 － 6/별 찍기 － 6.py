@@ -1,4 +1,6 @@
 n = int(input())
 for i in range(n):
-    print(' ' * i, end = '')
-    print('*' * ((n-i)*2-1))
+    s = ' ' * i
+    t = '*' * (2 * (n - i) - 1)
+    print(s + t)
+
